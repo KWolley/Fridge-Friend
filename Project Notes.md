@@ -1,6 +1,7 @@
-Team Project - 3308
+# Team Project - 3308
 
-PROJECT DEADLINES:
+## PROJECT DEADLINES:
+
   | Milestone | Deadline |   Description                         |
   | --------- | -------- | ------------------------------------  |
   |     1     |  Feb. 5  | Project Proposal                      |
@@ -13,19 +14,10 @@ PROJECT DEADLINES:
 
 
 
-Project title - Grocery Planner
-Team members' names
-Vision statement: what would you tell potential customers?
+## Project title - Grocery Planner
 
+# Comments, Ideas, Visuals etc
 
-Motivation: why are you working on this project?
-Risks to project completion, possibly including
-new language or working environment
-no prior experience working with these team members
-lack of some needed resources
-Mitigation Strategy for above risks
-Development method: scrum, kanban, waterfall: with specifics!
-Project Tracking Software (Trello is most common
 
 
 
