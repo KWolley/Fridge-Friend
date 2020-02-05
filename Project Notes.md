@@ -30,3 +30,5 @@ Thanks!\
 I found a (mobile) app that kind of does what we're trying to make, it includes what it calls 'pantry management and tracking.' The app has a fun name: Out of Milk. https://www.outofmilk.com/ideas/pantry-management-tips-ideas/ \
 This other one lets you choose the ingredients you have and shows recipes that you can make: https://myfridgefood.com/ \
 ~ Saloni
+
+![file image](Pictures/Webpage1.png)
