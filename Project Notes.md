@@ -16,7 +16,7 @@
 
 ## Project title - Grocery Planner
 Grocery planner name ideas:\
-Pantry Planner, Fridge Friend, Comida, Fresh Comida, Food Saver, 
+Pantry Planner, Fridge Friend, Comida, Fresh Comida (Comida = Food in Spanish), Food Saver, 
 
 # Comments, Ideas, Visuals etc
 
@@ -33,4 +33,5 @@ I found a (mobile) app that kind of does what we're trying to make, it includes 
 This other one lets you choose the ingredients you have and shows recipes that you can make: https://myfridgefood.com/ \
 ~ Saloni
 
+Possible layout of the main page. We could just have an image in the middle and the buttons on a top bar menu. Or, create buttons where it says Pantry and Recipes, although that would probably take longer.
 ![file image](Pictures/Webpage1.png)
