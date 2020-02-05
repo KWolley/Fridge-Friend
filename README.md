@@ -22,5 +22,7 @@ Office hours for questions related to programming tools and methods.  Online res
 The scrum development method will be used.  We will build based on the user story with the understanding that the project will be continuously evolved. As features are added, a sprint will be organized by the scrum master to attempt to address this feature.  
 
 ## Project Tracking Software (Trello is most common)
+For now, GitHub will be used as the "tracking software".  We feel that the assigment is simple enough that we can use this simple technique to track project milestones.  
+
 
 *Everyone must submit to moodle the link to their github repo and their username
