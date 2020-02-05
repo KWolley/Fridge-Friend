@@ -15,6 +15,8 @@
 
 
 ## Project title - Grocery Planner
+Grocery planner name ideas:\
+Pantry Planner, Fridge Friend, Comida, Fresh Comida, Food Saver, 
 
 # Comments, Ideas, Visuals etc
 
