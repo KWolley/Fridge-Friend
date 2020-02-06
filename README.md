@@ -5,7 +5,7 @@
   3) Patrick Conley
 
 ## Vision Statement
-This novel app will reduce food waste by tracking expiration dates, reccomended use by for produce, with the addition of grocery planning based on your weekly meal plan and what already exists in your kitched=n.
+This novel app will reduce food waste by tracking expiration dates, reccomended use by for produce, with the addition of grocery planning based on your weekly meal plan and what already exists in your kitchen.
 
 ## Motivations
 An ease of use, time reduction, make life easier app.
