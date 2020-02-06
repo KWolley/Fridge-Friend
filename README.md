@@ -1,4 +1,4 @@
-# Project Title
+# Project: Fridge Friend
 ## CSPB 3308 Spring 2020
   - Kara Wolley
   - Saloni Sharma
