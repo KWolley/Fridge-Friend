@@ -1,0 +1,17 @@
+Ingredients in Kitchen:
+	- Tomatoes
+	- Cilantro
+	- Bread
+	- Eggs
+	- Milk
+	- Cheese
+	- Carrots
+	- Broccoli
+	- Onion
+
+Staple Items:
+	- Salt
+	- Pepper
+	- Olive Oil
+	- Chili pepper
+	- Sugar
