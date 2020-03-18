@@ -10,106 +10,148 @@ body{
 }
 
 /*Top main nav bar*/
-.main_nav {
-	background-color: rgb(255, 140, 46);
-	font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
-	font-size: 3vw;
-	vertical-align: middle;
-	text-align: center;
-	padding-top: 2px;
-	padding-bottom: 7px;
-	overflow: hidden;
-  }
-  /*Links for main nav bar*/
-  .main_nav a {
-	color: #ffffff;
-	text-align: center;
-	padding: 35px;
-	text-decoration: none;
-	font-size: 1.2vw;
-	vertical-align: middle;
-	margin-left: 5%;
-	margin-right: 5%;
-  }
-  
-  .main_nav a:hover {
-	background-color: rgb(255, 161, 98);
-	color: rgb(255, 255, 255);
-  }
-  
-  .main_nav a.focus {
-	background-color: #4CAF50;
-	color: white;
-  }
-
-/*Default div format*/
-div{
-	background-color:white;
-	color:#6e6e6e;
-	font-family: 'Ubuntu', Helvetica, sans-serif;
-	font-size:2vw;
-	text-align: center;
+.nav-bar {
+	background-color: #ffffff;
+	height: 70px;
+	width: 100%;
 }
 
-/*Section 1 of main page*/
-.section1{
-	overflow: hidden;
+.logo-image {
+	float: left;
+	height: 70px;
+}
+
+.main_nav ul {
+	margin: 0;
+	display: inline-block;
+}
+
+.nav-item {
+	list-style-type: none;
+	display: inline-block;
+	height: 100%;
+	padding: 20px 0 0 0;
+	margin: 0 10px 0 10px;
+	font-size: 24px;
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+}
+  /*Links for main nav bar*/
+.nav-item a {
+	color: #FF8C2E;
+	text-decoration: none;
+}
+
+.nav-item a:hover {
+	background-color: rgb(255, 161, 98);
+	color: rgb(255, 255, 255);
+}
+
+.nav-item a.focus {
+	background-color: #4CAF50;
+	color: white;
+}
+
+/*Main page*/
+.main {
+	display: grid;
+	grid-template-rows: 40px auto 40px auto;
+	grid-template-columns: 30% 30%;
+	grid-template-areas:
+			"link-1 link-2"
+			"fridge bag"
+			"fridge link-3"
+			"fridge book";
+	grid-gap: 10px;
+	justify-items: center; /* row alignment*/
+	align-items: center; /* column alignment*/
+	justify-content: center;
+}
+
+.fridge-link {
+	grid-area: link-1;
+	padding: 20px 0 0 0;
+}
+.fridge-image {
+	grid-area: fridge;
+	width: 100%
+}
+.shop-link {
+	grid-area: link-2;
+	padding: 20px 0 0 0;
+}
+.shop-image {
+	grid-area: bag;
+	width: 100%
+}
+.recipe-link {
+	grid-area: link-3;
+	padding: 20px 0 0 0;
+}
+.recipe-image {
+	grid-area: book;
+	width: 100%
+}
+.btn {
+	background-color: #ffffff;
+	color: #4CAF50;
+	border: 2px solid #4CAF50;
+	border-radius: 10px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	box-shadow: #6e6e6e;
+
 }
 
 /*Text formatting*/
 h1{
-	color: rgb(0, 153, 255);
+	color: #0099ff;
 	font-family: Ubuntu, Helvetica, sans-serif;
 	font-size:3vw;
 	text-align: center;
 }
 
-h2{
-	color:rgb(255, 140, 46);
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:2vw;
+h2 {
+	color: #000000;
+	font-family: Ubuntu, Helvetica, sans-serif;
+	font-size:3vw;
 	text-align: center;
+	text-wrap: none;
 }
-
-h3{
-	color: rgb(59, 99, 122);
-	font-family: 'Ubuntu', Helvetica, sans-serif;
-	font-size:1.5vw;
-}
-
-
 
 /*Bottom nav bar*/
 .bottom_nav{
-	background-color: rgb(255, 140, 46);
-	color: rgb(199, 199, 199);
-	text-align: right;
-	float: right;
+	position: fixed;
+	background-color: #FF8C2E;
+	text-align: center;
 	font-size: 1vw;
 	vertical-align: middle;
 	width: 100vw;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	position: absolute;
-	min-height: 1%;
-	margin-bottom: 0;
+	bottom: 0;
 }
 
-.bottom_nav nav{
-	color: white;
-	float: left;
-	clear: right;
-	vertical-align: middle;
+.foot-item {
+	list-style-type: none;
+	display: inline-block;
+	height: 100%;
+	margin: 0 10px 0 10px;
+	font-size: 24px;
+	font-family: 'Ubuntu', Helvetica, sans-serif;
 }
-
-.bottom_nav a{
-	color: white;
+/*Links for main nav bar*/
+.foot-item a {
+	color: #ffffff;
 	text-decoration: none;
-	margin-left: 20px;
-	margin-right: 20px;		
 }
 
-.bottom_nav a:hover {
-	color: black;
-  }
+.foot-item a:hover {
+	background-color: rgb(255, 161, 98);
+	color: rgb(255, 255, 255);
+}
+
+.foot-item a.focus {
+	background-color: #4CAF50;
+	color: white;
+}
