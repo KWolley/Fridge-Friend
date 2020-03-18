@@ -7,33 +7,31 @@ The entire directory should be cloned to run the testing file.
 
 # User Acceptance Testing
 
-## 1. User views recipes for ideas on what food to make 
-    
-Description
-    - Test recipe matching with ingredient
-Pre-conditions
-    - User has valid user name and password
-Test steps
+## User views recipes for ideas on what food to make 
+#### Description
+   Test recipe matching with ingredient
+#### Pre-conditions
+    User has valid user name and password
+#### Test steps
       1. Navigate to ‘recipes’ page\
       2. Provide ingredient(s) name(s)
       3. Click search button
-Expected result
+#### Expected result
     - User can view a list of recipes that utilize the ingredient(s)
-Actual result
+#### Actual result
     - User is shown names and links to recipes
-Status (Pass/Fail)
+#### Status (Pass/Fail)
       Pass
-Post-conditions
+#### Post-conditions
     - Search through database of recipes and output matching recipes.
     - User can click and view specific recipes for more information.
     
-## 2. Website traversal - link management
-
-Description
+## Website traversal - link management
+#### Description
     Test that all links traverse pages accurately, and that user can return to home at any time
-Pre-conditions
+#### Pre-conditions
     All html, css and image files are uploaded correctly
-Test steps
+#### Test steps
     1. Navigate to the home page
     2. select the Pantry button in the header
     3. select the Logo (carrot button) in the header
@@ -45,7 +43,7 @@ Test steps
     9. select Pantry in the header
     10. selct Account in the footer
     11. return home using the Logo  in the header
-Expected result
+#### Expected result
     User should be directed to pages with the following text
     1. What would you like to do today?
     2. Welcome to your pantry
@@ -58,31 +56,30 @@ Expected result
     9. Welcome to your pantry
     10. Account Management
     11. What would you like to do today?
-Actual result
+#### Actual result
     User is through each webpage
-Status (Pass/Fail)
+#### Status (Pass/Fail)
     Pass
-Notes
+#### Notes
     N/A
-Post-conditions
+#### Post-conditions
     User is able to succesfully traverse through pages 
 
-## 3. User interaction
-
-Description
+## User interaction
+#### Description
     Allow the user to interact with owner by submitting a form with a name, emial and text fields
-Pre-conditions
+#### Pre-conditions
     User is able to traverse to Contact Us page
-Test steps
+#### Test steps
     1. Navigate to Contact Us page
     2. Provide name in the "Name" field
     3. Provide E-mail in the "E-mail" field
     4. Type "hello fridge friend" in "Message" field
-Expected result
+#### Expected result
     User should be able to submit form without error
-Actual result
+#### Actual result
     data not passed correctly 
-Status (Pass/Fail)
+#### Status (Pass/Fail)
     fail
-Notes
+#### Notes
     need to improve where data is being stored for owner to use
