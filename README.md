@@ -22,17 +22,3 @@ The scrum development method will be used.  We will build based on the user stor
 ## Project Tracking Software 
 We plan to use GitHub tools for the "tracking software," such as by creating checklists for tasks. We feel that the assigment can be accomplished with the use of this simple technique to track project milestones and assign duties to team members. Also, branches with associated documentation can provide a holistic view of the target goals for the application. After early development, if further specific tools show beneficial uses, not available in github, to manage the project scope, then additional options, such as Trello, may be implemented in the completion on this project.
 
-## Project Milestone 2: Agile meeting (15 points)
-The team must schedule a 20 to 30 minute group Zoom meeting. All group members and the instructor must attend. The meeting will have three parts:
-
-Weekly standup (5 minutes)
-What did you do last week?
-What are you doing this week?
-Are any obstacles stopping you?
-End-of-sprint Demonstration (10 minutes)
-Show what you have for the sprint
-Do NOT show code or database, your client is not a programmer!
-Sprint Retrospective
-What went well
-What didn't work
-How can we improve
