@@ -1,60 +1,116 @@
 /*Default formatting for body*/
-body{
+body, html {
 	margin: 0;
-	font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0;
+	/*font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
 	text-align: center;
 	vertical-align: middle;
-	color: rgb(56, 56, 56);
-	width: 100vw;
-	height: 100vh;
-}
-
-/*Top main nav bar*/
-.nav-bar {
-	background-color: #ffffff;
-	height: 70px;
+	color: rgb(56, 56, 56); */
 	width: 100%;
-}
-
-.logo-image {
-	float: left;
-	height: 70px;
-}
-
-.main_nav ul {
-	margin: 0;
-	display: inline-block;
-}
-
-.nav-item {
-	list-style-type: none;
-	display: inline-block;
 	height: 100%;
-	padding: 20px 0 0 0;
-	margin: 0 10px 0 10px;
-	font-size: 24px;
+}
+/*Defaut max widths for items*/
+img, embed, object, video {
+	max-width: 100%;
+}
+
+header, nav, footer, section, article, div {
+	box-sizing: border-box;
+}
+
+/*Default button values*/
+button {
+	min-height: 48px;
+	min-width: 48px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 	font-family: 'Ubuntu', Helvetica, sans-serif;
 }
-  /*Links for main nav bar*/
-.nav-item a {
-	color: #FF8C2E;
-	text-decoration: none;
+
+/*
+# Header
+ */
+.header {
+	box-shadow: 0 2px 2px #6e6e6e;
+	min-height: 52px;
+	transition: min-height;
 }
 
-.nav-item a:hover {
+.header_inner {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header_logo {
+	height: 72px;
+	margin-right: 1em;
+	margin-left: 1em;
+	vertical-align: center;
+	margin-top: 12px;
+}
+
+.header_title {
+	display: inline-block;
+	margin: 0.5em 0.25em;
+	font-weight: 200;
+	font-size: 2em;
+	color: #006837;
+}
+
+/*
+# Nav bar
+ */
+.nav {
+	background-color: #ffffff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav_list {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.nav_item {
+	box-sizing: border-box;
+	width: 24%;
+	text-align: center;
+	line-height: 24px;
+	padding: 24px;
+	text-transform: uppercase;
+}
+  /*Links for main nav bar*/
+.nav_item a {
+	color: #FF8C2E;
+	text-decoration: none;
+	padding: 1.5em; /*1.5x font size*/
+}
+
+.nav_item a:hover {
 	background-color: rgb(255, 161, 98);
 	color: rgb(255, 255, 255);
 }
 
-.nav-item a.focus {
+.nav_item a.focus {
 	background-color: #4CAF50;
 	color: white;
 }
 
-/*Main page*/
+/*
+# Main
+ */
 .main {
 	display: grid;
-	grid-template-rows: 40px auto 40px auto;
+	grid-template-rows: 80px auto 80px auto;
 	grid-template-columns: 30% 30%;
 	grid-template-areas:
 			"link-1 link-2"
@@ -98,14 +154,34 @@ body{
 	border-radius: 10px;
 	font-size: 14px;
 	cursor: pointer;
+	height: 50px;
 }
 
 .btn:hover {
 	box-shadow: #6e6e6e;
-
 }
 
-/*Text formatting*/
+.main2 {
+	display: grid;
+	grid-template-rows: auto 80px;
+	grid-template-columns: 30% auto 30%;
+	grid-template-areas:
+			"fullimage fullimage fullimage"
+			"link-1 link-2 link-3";
+	grid-gap: 10px;
+	justify-items: center; /* row alignment*/
+	align-items: center; /* column alignment*/
+	justify-content: center;
+}
+
+.kitchen1 {
+	grid-area: fullimage;
+	width: 70%;
+}
+
+/*
+# Text Formatting
+ */
 h1{
 	color: #0099ff;
 	font-family: Ubuntu, Helvetica, sans-serif;
@@ -121,14 +197,16 @@ h2 {
 	text-wrap: none;
 }
 
-/*Bottom nav bar*/
+/*
+# Footer
+ */
 .bottom_nav{
 	position: fixed;
 	background-color: #FF8C2E;
 	text-align: center;
 	font-size: 1vw;
 	vertical-align: middle;
-	width: 100vw;
+	width: 100%;
 	bottom: 0;
 }
 
@@ -137,13 +215,14 @@ h2 {
 	display: inline-block;
 	height: 100%;
 	margin: 0 10px 0 10px;
-	font-size: 24px;
+	font-size: 4em;
 	font-family: 'Ubuntu', Helvetica, sans-serif;
 }
 /*Links for main nav bar*/
 .foot-item a {
 	color: #ffffff;
 	text-decoration: none;
+	padding: 1.5em;
 }
 
 .foot-item a:hover {

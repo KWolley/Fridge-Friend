@@ -8,38 +8,38 @@ Last Revision: KW 3/18/2020
 <html>
 	<head> 
 		<meta charset="utf-8"> 
-		<!-- meta tag below for responsive sites -->
+		<!-- meta tag below for responsive sites
+		to match screen sizes -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Browser tab title -->
 		<title>Fridge Friend</title>
 		<!-- External css file -->		
 		<link rel="stylesheet" type="text/css" href="main_style.css">
+		<link rel="stylesheet" type="text/css" href="responsive_styles.css">
 	</head>
 
 
 	<body>
+		<div class="header">
+			<div class="header_inner">
+				<img class="header_logo" src="Images/Carrot.png">
+				<h1 class = "header_title"> Fridge Friend </h1>
+			</div>
+		</div>
 		<!-- Top main navigation bar -->
-		<div class="nav-bar">
-			<nav>
-				<a class="nav-logo" href="main.html">
-					<img class="logo-image" src="Images/Logo,%20Carrot%203.png">
-				</a>
-
-				<ul>
-					<li class="nav-item"> <a href="pantry.html"> Pantry </a> </li>
-					<li class="nav-item"> <a href="recipes.html"> Recipes </a> </li>
-					<li class="nav-item"> <a href="account.html"> Account </a> </li>
+		<div>
+			<nav class="nav">
+				<ul class="nav_list">
+					<li class="nav_item"> <a href="pantry.html"> Pantry </a> </li>
+					<li class="nav_item"> <a href="recipes.html"> Recipes </a> </li>
+					<li class="nav_item"> <a href="account.html"> Account </a> </li>
 				</ul>
 			</nav>
-			<!--<a href="#about">About</a>
-			<a href="pantry.html">PANTRY</a>
-			<b>Fridge Friend</b>
-			<a href="recipes.html">RECIPES</a>
-			-->
   		</div>
   
  	 	<!-- Main page content -->
 		<div>What would you like to do today?</div>
+
   		<div class="main">
 			<div class="fridge-link">
 				<a href="pantry.html">
@@ -53,16 +53,36 @@ Last Revision: KW 3/18/2020
 					<button type="button" class="btn">Make Shopping List</button></a>
 			</div>
 			<div class="shop-image">
-				<img src="Images/ShoopingBag.png">
+				<img src="Images/ShoppingBag.png">
 			</div>
 			<div class="recipe-link">
 				<a href="recipes.html">
 					<button type="button" class="btn">Find Recipes</button></a>
 			</div>
 			<div class="recipe-image">
-				<img src="Images/Recipes2.png">
+				<img src="Images/Recipes.png">
 			</div>
   		</div>
+
+		<!--
+		<div class="main2">
+			<div class="kitchen1">
+				<img src="Images/Asset%201.png">
+			</div>
+			<div class="recipe-link">
+				<a href="recipes.html">
+					<button type="button" class="btn">Find Recipes</button></a>
+			</div>
+			<div class="shop-link">
+				<a href="shoppinglist.html">
+					<button type="button" class="btn">Make Shopping List</button></a>
+			</div>
+			<div class="fridge-link">
+				<a href="pantry.html">
+					<button type="button" class="btn">Check Fridge</button></a>
+			</div>
+		</div>
+		-->
 
 		<!-- Bottom nav bar -->
 		<div class="bottom_nav">

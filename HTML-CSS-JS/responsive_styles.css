@@ -1,0 +1,72 @@
+/*
+ *
+ responsive web page design
+ *
+ */
+
+/* mobile devices */
+@media screen and (max-width: 500px){
+    body {background-color: #d3d3d3}
+    .header_logo {
+        height: 48px;
+        margin-right: 0.5em;
+    }
+    .header_title {
+        margin-left: 0;
+        font-size: 1.5em;
+        vertical-align: bottom;
+    }
+    .nav_list {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .nav_item {
+        flex-basis: 100%;
+    }
+    /*
+    .nav a {
+        text-align: center;
+        float: none;
+    }
+
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        transition: transform 0.3s ease;
+    }
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .nav__item {
+        display: none;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+    */
+    .main {}
+
+}
+/*
+@media screen and (min-width: 501px){
+    body {background-color: #87cefa}
+    .nav_list {
+        display: inline-block;
+        text-align: center;
+    }
+    .nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav a {
+        float: left;
+    }
+}
+
+ */
