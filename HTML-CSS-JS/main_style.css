@@ -1,21 +1,20 @@
 /*Default formatting for body*/
+* {
+	box-sizing: border-box;
+}
 body, html {
 	margin: 0;
 	padding: 0;
-	/*font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
-	text-align: center;
-	vertical-align: middle;
-	color: rgb(56, 56, 56); */
 	width: 100%;
 	height: 100%;
 }
-/*Defaut max widths for items*/
+/*Default max widths for items*/
 img, embed, object, video {
 	max-width: 100%;
 }
 
-header, nav, footer, section, article, div {
-	box-sizing: border-box;
+a {
+	text-decoration: none;
 }
 
 /*Default button values*/
@@ -35,13 +34,18 @@ ul {
 # Header
  */
 .header {
+	width: 100%;
 	box-shadow: 0 2px 2px #6e6e6e;
+	display: inline-block;
 	min-height: 52px;
 	transition: min-height;
+	padding: 1vh;
 }
 
 .header_inner {
-	width: 100%;
+	/*width: 100%;*/
+	display: inline-block;
+	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -66,23 +70,18 @@ ul {
 # Nav bar
  */
 .nav {
-	background-color: #ffffff;
-	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .nav_list {
 	display: flex;
-	justify-content: center;
-	width: 100%;
 	padding: 0;
 	margin: 0;
 }
 
 .nav_item {
 	box-sizing: border-box;
-	width: 24%;
 	text-align: center;
 	line-height: 24px;
 	padding: 24px;
@@ -111,7 +110,7 @@ ul {
 .main {
 	display: grid;
 	grid-template-rows: 80px auto 80px auto;
-	grid-template-columns: 30% 30%;
+	grid-template-columns: repeat(2,1fr);
 	grid-template-areas:
 			"link-1 link-2"
 			"fridge bag"
@@ -125,28 +124,35 @@ ul {
 
 .fridge-link {
 	grid-area: link-1;
-	padding: 20px 0 0 0;
+	padding: 5% 0 0 0;
+	margin: 0;
 }
 .fridge-image {
 	grid-area: fridge;
-	width: 100%
+	padding: 0;
+	margin: 0;
 }
 .shop-link {
 	grid-area: link-2;
-	padding: 20px 0 0 0;
+	padding: 5% 0 0 0;
+	margin: 0;
 }
 .shop-image {
 	grid-area: bag;
-	width: 100%
+	padding: 0;
+	margin: 0;
 }
 .recipe-link {
 	grid-area: link-3;
-	padding: 20px 0 0 0;
+	padding: 5% 0 0 0;
+	margin: 0;
 }
 .recipe-image {
 	grid-area: book;
-	width: 100%
+	padding: 0;
+	margin: 0;
 }
+
 .btn {
 	background-color: #ffffff;
 	color: #4CAF50;
@@ -159,24 +165,6 @@ ul {
 
 .btn:hover {
 	box-shadow: #6e6e6e;
-}
-
-.main2 {
-	display: grid;
-	grid-template-rows: auto 80px;
-	grid-template-columns: 30% auto 30%;
-	grid-template-areas:
-			"fullimage fullimage fullimage"
-			"link-1 link-2 link-3";
-	grid-gap: 10px;
-	justify-items: center; /* row alignment*/
-	align-items: center; /* column alignment*/
-	justify-content: center;
-}
-
-.kitchen1 {
-	grid-area: fullimage;
-	width: 70%;
 }
 
 /*
@@ -200,11 +188,10 @@ h2 {
 /*
 # Footer
  */
-.bottom_nav{
+.foot{
 	position: fixed;
 	background-color: #FF8C2E;
 	text-align: center;
-	font-size: 1vw;
 	vertical-align: middle;
 	width: 100%;
 	bottom: 0;
@@ -215,7 +202,7 @@ h2 {
 	display: inline-block;
 	height: 100%;
 	margin: 0 10px 0 10px;
-	font-size: 4em;
+	font-size: 1.5em;
 	font-family: 'Ubuntu', Helvetica, sans-serif;
 }
 /*Links for main nav bar*/
