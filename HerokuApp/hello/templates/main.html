@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- Fridge Friend - Web App -->
+
+<html>
+	<head> 
+		<meta charset="utf-8"> 
+		<!-- meta tag below for responsive sites -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Browser tab title -->
+		<title>Fridge Friend</title>
+		<!-- External css file -->		
+		<link rel="stylesheet" type="text/css" href="static/main.css">
+	</head>
+
+
+	<body>
+		<!-- Top main navigation bar -->
+		<nav class="main_nav">
+			<!--<a href="#about">About</a>-->
+			<a href="{% url 'pantry' %}">PANTRY</a>
+			<b>Fridge Friend</b>
+			<a href="{% url 'recipes' %}">RECIPES</a>
+  		</nav>
+  
+ 	 	<!-- Main page content -->
+  		<div class="section1">
+			<h1>Section One</h1>	
+			<h2>Pantry</h2>	
+			<hr width="70%">
+			<h3>Snickerdoodle cookie:</h3>
+			<img src="/static/snickerdoodle.jpg" alt="Cookie" width="600" height="400"/> 
+			<h3>Possible layout:</h3>
+			<img src="/static/Webpage1.png" alt="Layout"/> 
+  		</div>
+
+		<!-- Bottom nav bar -->
+		<div class="bottom_nav">
+			<nav>
+				<a href="#about">About</a>
+				<a href="{% url 'pantry' %}">Pantry</a>
+      			<a href="{% url 'recipes' %}">Recipes</a>
+				<a href="#customerservice">Customer Service</a>
+			</nav>
+			Copyright...
+		</div>
+
+	</body>
+
+<html>
