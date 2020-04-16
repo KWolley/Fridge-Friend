@@ -1,115 +1,223 @@
 /*Default formatting for body*/
-body{
+* {
+	box-sizing: border-box;
+}
+body, html {
 	margin: 0;
-	font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
-	text-align: center;
-	vertical-align: middle;
-	color: rgb(56, 56, 56);
-	width: 100vw;
-	height: 100vh;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+/*Default max widths for items*/
+img, embed, object, video {
+	max-width: 100%;
 }
 
-/*Top main nav bar*/
-.main_nav {
-	background-color: rgb(255, 140, 46);
-	font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
-	font-size: 3vw;
-	vertical-align: middle;
-	text-align: center;
-	padding-top: 2px;
-	padding-bottom: 7px;
-	overflow: hidden;
-  }
-  /*Links for main nav bar*/
-  .main_nav a {
-	color: #ffffff;
-	text-align: center;
-	padding: 35px;
+a {
 	text-decoration: none;
-	font-size: 1.2vw;
-	vertical-align: middle;
-	margin-left: 5%;
-	margin-right: 5%;
-  }
-  
-  .main_nav a:hover {
+}
+
+/*Default button values*/
+button {
+	min-height: 48px;
+	min-width: 48px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+}
+
+/*
+# Header
+ */
+.header {
+	width: 100%;
+	box-shadow: 0 2px 2px #6e6e6e;
+	display: inline-block;
+	min-height: 52px;
+	transition: min-height;
+	padding: 1vh;
+}
+
+.header_inner {
+	/*width: 100%;*/
+	display: inline-block;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header_logo {
+	height: 72px;
+	margin-right: 1em;
+	margin-left: 1em;
+	vertical-align: center;
+	margin-top: 12px;
+}
+
+.header_title {
+	display: inline-block;
+	margin: 0.5em 0.25em;
+	font-weight: 200;
+	font-size: 2em;
+	color: #006837;
+}
+
+/*
+# Nav bar
+ */
+.nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav_list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.nav_item {
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 24px;
+	padding: 24px;
+	text-transform: uppercase;
+}
+  /*Links for main nav bar*/
+.nav_item a {
+	color: #FF8C2E;
+	text-decoration: none;
+	padding: 1.5em; /*1.5x font size*/
+}
+
+.nav_item a:hover {
 	background-color: rgb(255, 161, 98);
 	color: rgb(255, 255, 255);
-  }
-  
-  .main_nav a.focus {
+}
+
+.nav_item a.focus {
 	background-color: #4CAF50;
 	color: white;
-  }
-
-/*Default div format*/
-div{
-	background-color:white;
-	color:#6e6e6e;
-	font-family: 'Ubuntu', Helvetica, sans-serif;
-	font-size:2vw;
-	text-align: center;
 }
 
-/*Section 1 of main page*/
-.section1{
-	overflow: hidden;
+/*
+# Main
+ */
+.main {
+	display: grid;
+	grid-template-rows: 80px auto 80px auto;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-areas:
+			"link-1 link-2"
+			"fridge bag"
+			"fridge link-3"
+			"fridge book";
+	grid-gap: 10px;
+	justify-items: center; /* row alignment*/
+	align-items: center; /* column alignment*/
+	justify-content: center;
 }
 
-/*Text formatting*/
+.fridge-link {
+	grid-area: link-1;
+	padding: 5% 0 0 0;
+	margin: 0;
+}
+.fridge-image {
+	grid-area: fridge;
+	padding: 0;
+	margin: 0;
+}
+.shop-link {
+	grid-area: link-2;
+	padding: 5% 0 0 0;
+	margin: 0;
+}
+.shop-image {
+	grid-area: bag;
+	padding: 0;
+	margin: 0;
+}
+.recipe-link {
+	grid-area: link-3;
+	padding: 5% 0 0 0;
+	margin: 0;
+}
+.recipe-image {
+	grid-area: book;
+	padding: 0;
+	margin: 0;
+}
+
+.btn {
+	background-color: #ffffff;
+	color: #4CAF50;
+	border: 2px solid #4CAF50;
+	border-radius: 10px;
+	font-size: 14px;
+	cursor: pointer;
+	height: 50px;
+}
+
+.btn:hover {
+	box-shadow: #6e6e6e;
+}
+
+/*
+# Text Formatting
+ */
 h1{
-	color: rgb(0, 153, 255);
+	color: #0099ff;
 	font-family: Ubuntu, Helvetica, sans-serif;
 	font-size:3vw;
 	text-align: center;
 }
 
-h2{
-	color:rgb(255, 140, 46);
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:2vw;
+h2 {
+	color: #000000;
+	font-family: Ubuntu, Helvetica, sans-serif;
+	font-size:3vw;
 	text-align: center;
+	text-wrap: none;
 }
 
-h3{
-	color: rgb(59, 99, 122);
+/*
+# Footer
+ */
+.foot{
+	position: fixed;
+	background-color: #FF8C2E;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	bottom: 0;
+}
+
+.foot-item {
+	list-style-type: none;
+	display: inline-block;
+	height: 100%;
+	margin: 0 10px 0 10px;
+	font-size: 1.5em;
 	font-family: 'Ubuntu', Helvetica, sans-serif;
-	font-size:1.5vw;
 }
-
-
-
-/*Bottom nav bar*/
-.bottom_nav{
-	background-color: rgb(255, 140, 46);
-	color: rgb(199, 199, 199);
-	text-align: right;
-	float: right;
-	font-size: 1vw;
-	vertical-align: middle;
-	width: 100vw;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	position: absolute;
-	min-height: 1%;
-	margin-bottom: 0;
-}
-
-.bottom_nav nav{
-	color: white;
-	float: left;
-	clear: right;
-	vertical-align: middle;
-}
-
-.bottom_nav a{
-	color: white;
+/*Links for main nav bar*/
+.foot-item a {
+	color: #ffffff;
 	text-decoration: none;
-	margin-left: 20px;
-	margin-right: 20px;		
+	padding: 1.5em;
 }
 
-.bottom_nav a:hover {
-	color: black;
-  }
+.foot-item a:hover {
+	background-color: rgb(255, 161, 98);
+	color: rgb(255, 255, 255);
+}
+
+.foot-item a.focus {
+	background-color: #4CAF50;
+	color: white;
+}
