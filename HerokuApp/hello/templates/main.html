@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 
-<!-- Fridge Friend - Web App -->
-
+<!-- Fridge Friend - Web App
+Last Revision: KW 4/14/2020
+-->
 <html>
 	<head> 
 		<meta charset="utf-8"> 
-		<!-- meta tag below for responsive sites -->
+		<!-- meta tag below for responsive sites
+		to match screen sizes -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Browser tab title -->
 		<title>Fridge Friend</title>
 		<!-- External css file -->		
-		<link rel="stylesheet" type="text/css" href="static/main.css">
+		<link rel="stylesheet" type="text/css" href="main_style.css">
+		<link rel="stylesheet" type="text/css" href="responsive_styles.css">
 	</head>
-
-
 	<body>
-		<!-- Top main navigation bar -->
-		<nav class="main_nav">
-			<!--<a href="#about">About</a>-->
-			<a href="{% url 'pantry' %}">PANTRY</a>
-			<b>Fridge Friend</b>
-			<a href="{% url 'recipes' %}">RECIPES</a>
-  		</nav>
+		<div class="header">
+			<div class="header_inner">
+				<a href="main.html">
+					<img class="header_logo" src="Images/Carrot.png" >
+					<h1 class = "header_title"> Fridge Friend </h1>
+				</a>
+			</div>
+			<!-- Top main navigation bar -->
+
+				<div class="nav">
+					<ul class="nav_list">
+						<li class="nav_item"> <a href="pantry.html"> Pantry </a> </li>
+						<li class="nav_item"> <a href="recipes.html"> Recipes </a> </li>
+						<li class="nav_item"> <a href="account.html"> Account </a> </li>
+					</ul>
+				</div>
+
+		</div>
+
   
  	 	<!-- Main page content -->
-  		<div class="section1">
-			<h1>Section One</h1>	
-			<h2>Pantry</h2>	
-			<hr width="70%">
-			<h3>Snickerdoodle cookie:</h3>
-			<img src="/static/snickerdoodle.jpg" alt="Cookie" width="600" height="400"/> 
-			<h3>Possible layout:</h3>
-			<img src="/static/Webpage1.png" alt="Layout"/> 
+  		<div class="main">
+			<div class="fridge-link">
+				<a href="pantry.html">
+					<button type="button" class="btn">Check Fridge</button> </a>
+			</div>
+			<div class="fridge-image">
+				<img src="Images/fridge2.png">
+			</div>
+			<div class="shop-link">
+				<a href="shoppinglist.html">
+					<button type="button" class="btn">Make Shopping List</button></a>
+			</div>
+			<div class="shop-image">
+				<img src="Images/ShoppingBag.png">
+			</div>
+			<div class="recipe-link">
+				<a href="recipes.html">
+					<button type="button" class="btn">Find Recipes</button></a>
+			</div>
+			<div class="recipe-image">
+				<img src="Images/Recipes.png">
+			</div>
   		</div>
 
 		<!-- Bottom nav bar -->
-		<div class="bottom_nav">
+		<div class="foot">
 			<nav>
-				<a href="#about">About</a>
-				<a href="{% url 'pantry' %}">Pantry</a>
-      			<a href="{% url 'recipes' %}">Recipes</a>
-				<a href="#customerservice">Customer Service</a>
+				<ul>
+					<li class="foot-item"> <a href="pantry.html"> Pantry </a> </li>
+					<li class="foot-item"> <a href="recipes.html"> Recipes </a> </li>
+					<li class="foot-item"> <a href="account.html"> Account </a> </li>
+					<li class="foot-item"> <a href="contactus.html"> Contact Us </a> </li>
+				</ul>
 			</nav>
-			Copyright...
 		</div>
-
 	</body>
-
 <html>

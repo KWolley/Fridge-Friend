@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+
 <!-- Recipes page -->
 
 <html>
@@ -9,10 +9,36 @@
 		<!-- Browser tab title -->
 		<title>Recipes</title>
 		<!-- External css file -->		
-		<link rel="stylesheet" type="text/css" href="{% static 'recipes.css' %}"/>
+		<link rel="stylesheet" type="text/css" href="recipes.css">
+        <link rel="stylesheet" type="text/css" href="main_style.css">
     </head>
     <body>
-        This is the page for recipes.
+    <!-- Top main navigation bar -->
+    <div class="nav">
+        <nav>
+            <a class="nav-logo" href="main.html">
+                <img class="header_logo" src="Images/Logo,%20Carrot%204.png">
+            </a>
+            <ul>
+                <li class="nav_item"> <a href="pantry.html"> Pantry </a> </li>
+                <li class="nav_item"> <a href="recipes.html"> Recipes </a> </li>
+                <li class="nav_item"> <a href="account.html"> Account </a> </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="recipe-main">
+        <h2> Recipes </h2>
+    </div>
+    <!-- Bottom nav bar -->
+    <div class="foot">
+        <nav>
+            <ul>
+                <li class="foot-item"> <a href="pantry.html"> Pantry </a> </li>
+                <li class="foot-item"> <a href="recipes.html"> Recipes </a> </li>
+                <li class="foot-item"> <a href="account.html"> Account </a> </li>
+                <li class="foot-item"> <a href="contactus.html"> Contact Us </a> </li>
+            </ul>
+        </nav>
+    </div>
     </body>
-
     </html>

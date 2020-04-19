@@ -1,0 +1,54 @@
+/*
+ *
+ responsive web page design
+ *
+ */
+
+/* mobile devices */
+@media screen and (max-width: 500px){
+    .nav_list {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .nav_item {
+        flex-basis: 100%;
+    }
+
+    .main {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+                "link-1"
+                "fridge"
+                "link-2"
+                "bag"
+                "link-3"
+                "book";
+        grid-gap: 0.5%;
+    }
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 830px){
+    .nav_list {
+        text-align: center;
+    }
+    .nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav a {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 831px){
+    .header{
+        vertical-align: bottom;
+    }
+    .nav {
+        float: right;
+        padding-top: 20px;
+    }
+}
