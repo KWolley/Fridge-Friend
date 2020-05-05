@@ -2,11 +2,10 @@
 #### Team: Kara Wolley, Patrick Conley, Saloni Sharma
 <hr>
 
-- Project tracker link (Instructor can access)
+- Project tracker: We utilized Slack as our main mode of communication and keep track of our progress. 
 
 
 - Version control repository link: https://github.com/s-saloni/FridgeFriend
-or https://github.com/KWolley/Fridge-Friend
 
 
 - App Deployment Link: https://fridge--friend.herokuapp.com/
